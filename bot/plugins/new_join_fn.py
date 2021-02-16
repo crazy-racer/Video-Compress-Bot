@@ -42,7 +42,8 @@ async def help_message_f(client, message):
     if msg.chat.id in Config.BANNED_USERS:
         await client.send_message(
             chat_id=msg.chat.id,
-            text="**You are banned 🚫 to use me 🤭. Contact [**NoOb** hACkEr](http://t.me/Nh_pmbot)**",
+            text="**You are banned** 🚫 to use me 🤭. Contact [**NoOb** hACkEr](http://t.me/Nh_pmbot)
+",
             reply_to_message_id=msg.message_id
         )
         return
@@ -52,7 +53,7 @@ async def help_message_f(client, message):
             user = await client.get_chat_member(update_channel, message.chat.id)
             if user.status == "kicked":
                await message.reply_text(
-                   text="Sorry Sir, You are Banned to use me 🤭. Contact my [Support Group](https://t.me/{update_channel}).",
+                   text="Sorry bruh, You are **Banned** to use me 🤭. Contact my [Support Group](https://t.me/{update_channel}).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -63,7 +64,7 @@ async def help_message_f(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel 😎", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("**Join Updates Channel** 😁", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
