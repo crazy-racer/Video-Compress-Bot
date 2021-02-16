@@ -52,7 +52,7 @@ async def help_message_f(client, message):
             user = await client.get_chat_member(update_channel, message.chat.id)
             if user.status == "kicked":
                await message.reply_text(
-                   text="Sorry Sir, You are Banned to use me 🤭. Contact my [Support Group](https://t.me/Mr_Developer_Support).",
+                   text="Sorry Sir, You are Banned to use me 🤭. Contact my [Support Group](https://t.me/{update_channel}).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -72,7 +72,7 @@ async def help_message_f(client, message):
             return
         except Exception:
             await message.reply_text(
-                text="Something went Wrong. Contact my [Support Group](https://t.me/Mr_Developer_Support).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/{update_channel}).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -83,14 +83,14 @@ async def help_message_f(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates Channel 📡', url='https://t.me/Mr_Bot_Developer')
+                    InlineKeyboardButton('Updates Channel 📡', url='https://t.me/{update_channel}')
                 ],
                 [
-                    InlineKeyboardButton('Support Group 🛰️', url='https://t.me/Mr_Developer_Support')
+                    InlineKeyboardButton('Support Group 🛰️', url='https://t.me/{update_channel}')
                 ],
                 [
-                    InlineKeyboardButton('Developer 👨‍💻', url='https://t.me/MrBot_Developer'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
-                    InlineKeyboardButton('❤️ Special Thanks ❣️', url='https://t.me/AbirHasan2005') # Must Give us Credits!
+                    InlineKeyboardButton('Developer 👨‍💻', url='https://t.me/{update_channel}'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
+                    InlineKeyboardButton('❤️ Special Thanks ❣️', url='https://t.me/{update_channel}') # Must Give us Credits!
                 ]
             ]
         ),
