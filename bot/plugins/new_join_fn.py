@@ -42,7 +42,7 @@ async def help_message_f(client, message):
     if msg.chat.id in Config.BANNED_USERS:
         await client.send_message(
             chat_id=msg.chat.id,
-            text="**You are banned 🚫 to use me 🤭. Contact @Mr_Developer_Support**",
+            text="**You are banned 🚫 to use me 🤭. Contact [**NoOb** hACkEr](http://t.me/Nh_pmbot)**",
             reply_to_message_id=msg.message_id
         )
         return
