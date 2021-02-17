@@ -42,7 +42,7 @@ async def help_message_f(client, message):
     if msg.chat.id in Config.BANNED_USERS:
         await client.send_message(
             chat_id=msg.chat.id,
-            text="**You are banned** 🚫 to use me 🤭. Contact [**NoOb** hACkEr](http://t.me/Nh_pmbot)
+            text=" **You are banned** 🚫 to use me 🤭. Contact [ **NoOb** hACkEr](http://t.me/Nh_pmbot)
 ",
             reply_to_message_id=msg.message_id
         )
@@ -87,11 +87,11 @@ async def help_message_f(client, message):
                     InlineKeyboardButton('Updates Channel 📡', url='https://t.me/{update_channel}')
                 ],
                 [
-                    InlineKeyboardButton('Support Group 🛰️', url='https://t.me/{update_channel}')
+                    InlineKeyboardButton('Support Group 🛰️', url='https://t.me/othergroupzhelp')
                 ],
                 [
-                    InlineKeyboardButton('Developer 👨‍💻', url='https://t.me/{update_channel}'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
-                    InlineKeyboardButton('❤️ Special Thanks ❣️', url='https://t.me/{update_channel}') # Must Give us Credits!
+                    InlineKeyboardButton('Dev', url='https://t.me/The_NOoBHaCkeR'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
+                    InlineKeyboardButton('❤️ Special Thanks ❣️', url='https://t.me/telegram') # Must Give us Credits!
                 ]
             ]
         ),
